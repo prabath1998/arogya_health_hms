@@ -18,7 +18,7 @@
             <div class="container mx-auto">
                 {{-- Flash message --}}
                 <div x-data="{ showMessage: true }" x-show="showMessage"
-                    x-init="setTimeout(() => showMessage = false, 2000)">
+                    x-init="setTimeout(() => showMessage = false, 2000)" class="mt-4">
                     @if (session()->has('message'))
                     <div class="px-8 py-6 bg-green-400 text-white flex justify-between rounded">
                         <div class="flex items-center">
